@@ -4,7 +4,7 @@
   <groupId>com.devops</groupId>
   <artifactId>my-devops</artifactId>
   <packaging>jar</packaging>
-  <version>1.6.2-snapshot</version>
+  <version>1.6.2</version>
   <name>devops</name>
   <url>http://maven.apache.org</url>
   <dependencies>
