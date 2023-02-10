@@ -6,11 +6,7 @@ pipeline{
                  checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'git credentials', url: 'https://github.com/nazreenfathi/devops.git']])
             }
         }
-        stage('maven build'){
-            steps{
-                sh 'mvn clean install'
-            }
-        }
+        
         stage('analysing in sonarqube'){
             steps{
                 withSonarQubeEnv("SonarQube") {
