@@ -9,8 +9,8 @@ pipeline{
         
         stage('analysing in sonarqube'){
             steps{
-                withSonarQubeEnv("Sonarqube") {
-                    sh "${tool("Sonarqube 4.8.0")}/bin/sonar-scanner \
+                withSonarQubeEnv("SonarQube") {
+                    sh "${tool("SonarQube 4.8.0")}/bin/sonar-scanner \
                     -Dsonar.projectKey=devops \
                     -Dsonar.java.binaries=target \
                     -Dsonar.host.url=http://http://44.203.21.133:9000 \
